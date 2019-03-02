@@ -34,15 +34,6 @@ $spacing: 20px;
   align-items: center;
 }
 
-@mixin main-header() {
-    color: $green;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    font-family: $font1;
-    margin-bottom: 10px;
-}
-
 @mixin sub-header() {
     color: $grey-dark;
     font-size: 1.1em;

@@ -14,6 +14,55 @@
   font-family: "Crimson Text", serif;
   letter-spacing: 3px; }
 
-body {
+html, body {
   font-size: 14pt;
-  font-family: "Martel Sans", sans-serif; }
+  font-family: "Martel Sans", sans-serif;
+  height: 100%;
+  margin: 0px; }
+
+.main-site-header {
+  position: absolute;
+  top: 100px;
+  width: 100%; }
+
+.site-header {
+  font-weight: bold;
+  font-size: 4em;
+  font-family: "Crimson Text", serif;
+  text-align: center;
+  margin: 0px 0px 100px 0px; }
+
+.main-area {
+  margin: 0px 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper {
+  width: 1180px;
+  margin: 0px auto; }
+
+#question-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border: 5px darkblue solid;
+  border-radius: 15px;
+  margin: 0px auto 50px auto; }
+
+#question {
+  font-size: 3em; }
+
+#new-question {
+  text-align: center;
+  font-size: 1.8em;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  width: 300px;
+  border-radius: 15px;
+  margin: 0px auto; }
+  #new-question::selection {
+    background: darkblue; }

@@ -1,8 +1,60 @@
 @import "./_variables";
 @import "./_globals";
 
-body {
+html, body {
     font-size: 14pt;
     font-family: $font1;
-    
+    height: 100%;
+    margin: 0px;
+}
+
+.main-site-header {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+.site-header {
+    font-weight: bold;
+    font-size: 4em;
+    font-family: $font2;
+    text-align: center;
+    margin: 0px 0px 100px 0px;
+}
+
+.main-area {
+    margin: 0px 0px;
+    height: 100%;
+    @include flex-center();
+}
+
+.wrapper {
+    width: $page-width;
+    margin: 0px auto;
+}
+
+#question-box {
+    @include flex-center();
+    width: 500px;
+    border: 5px darkblue solid;
+    border-radius: 15px;
+    margin: 0px auto 50px auto;
+}
+
+#question {
+    font-size: 3em;
+}
+
+#new-question {
+    text-align: center;
+    font-size: 1.8em;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    width: 300px;
+    border-radius: 15px;
+    margin: 0px auto;
+    &::selection {
+        background: darkblue;
+    }
 }
